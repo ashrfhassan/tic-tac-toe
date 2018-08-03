@@ -16,10 +16,10 @@ class WinnerCheckerTest extends Testable
         $this->testCase = NULL;
     }
 
-    public function testAdd()
+    public function testcheckWinner()
     {
-        $result = $this->testCase->checkWinner(new Player1());
-        $this->assertEquals(true, $result);
+        $result = WinnerChecker::checkWinner(WinnerChecker::getWinPossibilities(""), new Player1("ahmed"));
+        $this->assertEquals(false, $result);
     }
 
 }
