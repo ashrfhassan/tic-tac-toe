@@ -23,7 +23,7 @@ function startMatch() {
             currentMatchID = res.data.match_id;
             currentState = res.data.currentState;
             $('#player-name-turn').text(player1Name);
-            $('#player-symbol-turn').text(player1Name);
+            $('#player-symbol-turn').text(player1Symbol);
             $('#startSection').addClass('d-none');
             $('#gameSection').removeClass('d-none');
         },
